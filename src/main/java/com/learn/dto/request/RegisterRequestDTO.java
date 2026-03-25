@@ -3,7 +3,7 @@ package com.learn.dto.request;
 import lombok.Data;
 
 @Data
-public class RegisterRequest {
+public class RegisterRequestDTO {
 
     private String firstName;
     private String lastName;
