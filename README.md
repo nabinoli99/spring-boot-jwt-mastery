@@ -2,14 +2,16 @@
 
 > Learning JWT Authentication in Spring Boot — one concept at a time, one commit at a time.
 
-## 📚 Concepts Covered
+## 📚 Key concepts learned:
 
-- JWT Theory + Setup + Dependencies
-- User Registration + Password Encoding
-- Login + Token Generation
-- Token Validation + Filter
-- Protected Routes + Testing
-- Refresh Tokens
+JWT — token based auth, no sessions, stateless
+JwtService — generates and validates tokens
+JwtAuthFilter — intercepts every request, validates token
+SecurityConfig — configures which endpoints need auth
+CustomUserDetailsService — loads user from DB for Spring Security
+@AuthenticationPrincipal — pulls logged in user from SecurityContext
+BCrypt — hashes passwords before saving to DB
+DTOs — never expose password in response
 
 ## 🗂️ Project Structure
 ```
@@ -26,7 +28,8 @@ jwt-mastery/
                 │   │   ├── LoginRequestDTO.java
                 │   │   └── RegisterRequestDTO.java
                 │   └── response/
-                │       └── AuthResponseDTO.java
+                │       ├── AuthResponseDTO.java
+                │       └── UserResponseDTO.java
                 ├── entity/
                 │   ├── Role.java
                 │   └── User.java
@@ -59,9 +62,7 @@ jwt-mastery/
 ```
 feat:     → new feature
 config:   → configuration
-fix:      → bug fix
 refactor: → code improvement
-docs:     → documentation
 ```
 
 > 🎯 Goal: Implement production-ready JWT Authentication from scratch.
