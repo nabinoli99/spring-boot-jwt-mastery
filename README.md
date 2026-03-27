@@ -11,6 +11,39 @@
 - Protected Routes + Testing
 - Refresh Tokens
 
+## 🗂️ Project Structure
+```
+jwt-mastery/
+└── src/
+    └── main/
+        └── java/
+            └── com/learn/
+                ├── controller/
+                │   ├── AuthController.java
+                │   └── UserController.java
+                ├── dto/
+                │   ├── request/
+                │   │   ├── LoginRequestDTO.java
+                │   │   └── RegisterRequestDTO.java
+                │   └── response/
+                │       └── AuthResponseDTO.java
+                ├── entity/
+                │   ├── Role.java
+                │   └── User.java
+                ├── exception/
+                │   └── ConflictException.java
+                ├── repository/
+                │   └── UserRepository.java
+                ├── security/
+                │   ├── CustomUserDetailsService.java
+                │   ├── JwtAuthFilter.java
+                │   ├── JwtService.java
+                │   └── SecurityConfig.java
+                ├── service/
+                │   └── AuthService.java
+                └── JwtMasteryApplication.java
+```
+
 ## 🛠️ Tech Stack
 
 | Tech | Version |
