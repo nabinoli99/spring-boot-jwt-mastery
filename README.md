@@ -2,16 +2,16 @@
 
 > Learning JWT Authentication in Spring Boot — one concept at a time, one commit at a time.
 
-## 📚 Key concepts learned:
+## 📚 Key Concepts Learned
 
-JWT — token based auth, no sessions, stateless
-JwtService — generates and validates tokens
-JwtAuthFilter — intercepts every request, validates token
-SecurityConfig — configures which endpoints need auth
-CustomUserDetailsService — loads user from DB for Spring Security
-@AuthenticationPrincipal — pulls logged in user from SecurityContext
-BCrypt — hashes passwords before saving to DB
-DTOs — never expose password in response
+- JWT — token based auth, no sessions, stateless
+- JwtService — generates and validates tokens
+- JwtAuthFilter — intercepts every request, validates token
+- SecurityConfig — configures which endpoints need auth
+- CustomUserDetailsService — loads user from DB for Spring Security
+- @AuthenticationPrincipal — pulls logged in user from SecurityContext
+- BCrypt — hashes passwords before saving to DB
+- DTOs — never expose password in response
 
 ## 🗂️ Project Structure
 ```
